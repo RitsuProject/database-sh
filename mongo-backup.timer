@@ -1,0 +1,11 @@
+[Unit]
+Description=MongoDB Backup
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+AccuracySec=30s
+Unit=mongo-backup.service
+
+[Install]
+WantedBy=timers.target
