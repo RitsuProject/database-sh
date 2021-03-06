@@ -1,0 +1,9 @@
+[Unit]
+Description=MongoDB Backup
+
+[Service]
+ExecStart=/root/backup.sh
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
